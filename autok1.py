@@ -18,7 +18,12 @@ for km in kmAllasok:
 print(kis, 'autó ment 20 ezernél kevesebbet')
 
 
-
+'''
+for auto in autok:
+    gyarto = auto.split(' ')[0]
+    if gyarto = 'Toyota':
+        toyotaSzama += 1
+'''
 for auto in autok:
     if 'toyota' in auto.lower():
         toyotaSzama += 1
