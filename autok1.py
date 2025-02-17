@@ -30,10 +30,12 @@ for auto in autok:
     if 'toyota' in auto.lower():
         toyotaSzama += 1
 
-
+for i in range(len(kmAllasok)):
+    if kmAllasok[maxFutasTelj] < kmAllasok[i]:
+        maxFutasTelj = i        # Ezen a helyen lesz a legnagyobb futásteljesítmény
 
 
 print(kis, 'autó ment 20 ezernél kevesebbet')
 print(toyotaSzama, 'Toyota van')
-print()
+print('a legnagyobb futás teljesítményű autó:', autok[maxFutasTelj])
 print('Átlagos futásteljesítmény:', round(osszFutas/len(kmAllasok), 2))
