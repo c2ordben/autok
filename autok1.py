@@ -11,9 +11,15 @@ print(kmAllasok)
 
 
 kis = 0
+toyotaSzama = 0
 for km in kmAllasok:
     if km < 20000:
         kis += 1
 print(kis, 'autó ment 20 ezernél kevesebbet')
 
 
+
+for auto in autok:
+    if 'toyota' in auto.lower():
+        toyotaSzama += 1
+print(toyotaSzama, 'Toyota van')
