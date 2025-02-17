@@ -5,6 +5,15 @@ kmAllasok = []
 for sor in f:
     autok.append(sor.strip())
     sor = f.readline()
-    kmAllasok.append(sor.strip())
+    kmAllasok.append(int(sor.strip()))
 print(autok)
 print(kmAllasok)
+
+
+kis = 0
+for km in kmAllasok:
+    if km < 20000:
+        kis += 1
+print(kis, 'autó ment 20 ezernél kevesebbet')
+
+
