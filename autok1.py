@@ -12,10 +12,12 @@ print(kmAllasok)
 
 kis = 0
 toyotaSzama = 0
+osszFutas = sum(kmAllasok) # Összes autó ennyi km-t tett meg
+maxFutasTelj = 0 # Helyet tárolunk, nem az értéket / lista indexét tárolom
 for km in kmAllasok:
     if km < 20000:
         kis += 1
-print(kis, 'autó ment 20 ezernél kevesebbet')
+
 
 
 '''
@@ -27,4 +29,11 @@ for auto in autok:
 for auto in autok:
     if 'toyota' in auto.lower():
         toyotaSzama += 1
+
+
+
+
+print(kis, 'autó ment 20 ezernél kevesebbet')
 print(toyotaSzama, 'Toyota van')
+print()
+print('Átlagos futásteljesítmény:', round(osszFutas/len(kmAllasok), 2))
